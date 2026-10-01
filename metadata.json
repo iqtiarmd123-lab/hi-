@@ -1,0 +1,6 @@
+{
+  "name": "Ethical Security AI Assistant",
+  "description": "Mobile-first cybersecurity learning, defensive security, tool registry, and authorized security analysis AI platform.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

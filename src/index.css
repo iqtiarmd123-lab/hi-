@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg: #0c0c0e;
+    --sidebar-bg: #111113;
+    --ink: #e4e4e7;
+    --ink-dim: rgba(228, 228, 231, 0.5);
+    --ink-faint: rgba(228, 228, 231, 0.1);
+    --accent: #10b981;
+    --accent-glow: rgba(16, 185, 129, 0.2);
+    --sidebar-w: 240px;
+  }
+
+  body {
+    background-color: var(--bg);
+    color: var(--ink);
+    font-family: 'Inter', sans-serif;
+  }
+
+  h1, h2, .font-syne {
+    font-family: 'Syne', sans-serif;
+  }
+
+  code, pre, .font-mono, .system-meta, .tag, .stat-val, .pane-title {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+/* Custom sleek Systematic Industrial scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #0c0c0e;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(228, 228, 231, 0.15);
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #10b981;
+}
+
+@keyframes pulse-subtle {
+  0% { opacity: 1; }
+  50% { opacity: 0.3; }
+  100% { opacity: 1; }
+}
+
+.animate-pulse-subtle {
+  animation: pulse-subtle 2s infinite;
+}
